@@ -1,0 +1,175 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+/* ---------------- KEY INFORMATION ---------------- */
+
+.key-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+.key-info div {
+    background: #1e1e1e;
+    border: 1px solid #333;
+
+    padding: 15px 30px;
+
+    min-width: 160px;
+
+    border-radius: 10px;
+}
+
+.key-info span {
+    display: block;
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.key-info strong {
+    font-size: 20px;
+}
+
+/* ---------------- KEYBOARD ---------------- */
+
+.keyboard {
+    background: #181818;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    border: 1px solid #333;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.row {
+    display: flex;
+    gap: 7px;
+
+    margin-bottom: 7px;
+}
+
+/* Individual keys */
+
+button {
+    flex: 1;
+
+    min-width: 50px;
+    height: 55px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #292929;
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.1s;
+}
+
+/* Hover */
+
+button:hover {
+    background: #3a3a3a;
+}
+
+/* Key that is currently pressed */
+
+button.active {
+    background: #ffffff;
+    color: #111;
+
+    transform: translateY(3px);
+
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Special keys */
+
+.wide {
+    flex: 2;
+}
+
+.tab {
+    flex: 1.5;
+}
+
+.caps {
+    flex: 1.7;
+}
+
+.enter {
+    flex: 1.8;
+}
+
+.shift {
+    flex: 2;
+}
+
+.space {
+    flex: 5;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .keyboard {
+        overflow-x: auto;
+    }
+
+    button {
+        min-width: 45px;
+        height: 50px;
+    }
+
+    .key-info {
+        flex-wrap: wrap;
+    }
+}
+```
